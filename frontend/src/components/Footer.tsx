@@ -1,6 +1,6 @@
 
 
-import { Facebook, Twitter, Instagram } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Heart } from 'lucide-react';
 import NewsletterInput from './inputs/NewsletterInput';
 import Logo from './Logo';
 
@@ -38,10 +38,20 @@ const Footer = () => {
             <NewsletterInput />
           </div>
         </div>
-      </div>      
+      </div>   
+         
       <div className="max-w-6xl mx-auto mt-8 text-center text-muted text-sm">
         &copy; {new Date().getFullYear()} NFT Market. All rights reserved.
-      </div>
+         <div className="flex items-center gap-2 text-white/50 text-sm justify-self-center">
+            <span>Made with</span>
+            <Heart className="w-4 h-4 text-red-500 animate-pulse" fill="currentColor" />
+            <span>by</span>
+            <span className="font-bold bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
+              Sucre
+            </span>
+          </div>
+        </div>
+      
     </footer>
   )
 }
