@@ -31,7 +31,9 @@ function App() {
       <Route path="/create" element={<CreateNFTPage />} /> 
       <Route path="/rankings" element={<RankingsPage />} />
       <Route path="/about" element={<AboutPage />} />
+      
       <Route path="/contact" element={<ContactPage />} />
+
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
     </div>
